@@ -1,19 +1,24 @@
 <template>
   <div>
     <HeaderComp />
-    <AsideComp />
+    <section>
+      <AsideComp />
+      <MainComp />
+    </section>  
   </div>
 </template>
 
 <script>
   import HeaderComp from './HeaderComp.vue';
   import AsideComp from './AsideComp.vue';
+  import MainComp from './main/MainComp.vue';
 
   export default {
     name: 'DashboardComp',
     components: {
       HeaderComp,
-      AsideComp
+      AsideComp,
+      MainComp
     }
   }
 </script>
@@ -22,5 +27,9 @@
   * {
     margin: 0px;
     padding: 0px;
+  }
+
+  section {
+    display: flex;
   }
 </style>
