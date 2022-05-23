@@ -4,7 +4,6 @@
       <span @click="generateAddress" class="btn-generate">
         <h6>Gerar endereços</h6>
       </span>
-      <h1>{{ message }}</h1>
     </section>
     <hr>
     <ul>
@@ -35,17 +34,11 @@
     data() {
       return {
         listAddress: [],
-        message: '',
       }
     },
     methods: {
       generateAddress() {
         const { ceps } = this.$store.state;
-        const notFound = 'Não a CEPs na lista, adicione CEPs, para gerar endereços';
-
-        if (!ceps.length) {
-          return this.message = notFound;
-        }
 
         for (let i in ceps) {
           axios.get(`https://viacep.com.br/ws/${ceps[i]}/json/`)
