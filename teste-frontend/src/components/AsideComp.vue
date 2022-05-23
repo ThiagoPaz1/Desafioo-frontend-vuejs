@@ -34,6 +34,7 @@
     width: 33px;
     height: 33px;
   }
+  
   div img:first-child {
     margin-top: 30px;
   }
