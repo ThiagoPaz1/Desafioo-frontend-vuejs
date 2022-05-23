@@ -42,7 +42,11 @@
 
   /* SECTION 1 */
   .imgLogo {
-    margin: 24px 14px 24px 16px;
+    width: 50px;
+    height: 50px;
+    margin-left: 24px;
+    margin-top: 14px;
+    margin-right: 24px;
   }
 
   .imgLogo + div {
@@ -51,7 +55,6 @@
     justify-content: center;
     width: 287px;
     height: 58px;
-    margin-left: 10px;
     margin-top: 10px;
     border: 2px solid #FFFFFF;
     border-radius: 10px;

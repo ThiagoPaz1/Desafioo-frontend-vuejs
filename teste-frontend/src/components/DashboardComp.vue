@@ -1,15 +1,19 @@
 <template>
   <div>
     <HeaderComp />
+    <AsideComp />
   </div>
 </template>
 
 <script>
   import HeaderComp from './HeaderComp.vue';
+  import AsideComp from './AsideComp.vue';
+
   export default {
     name: 'DashboardComp',
     components: {
-      HeaderComp
+      HeaderComp,
+      AsideComp
     }
   }
 </script>
