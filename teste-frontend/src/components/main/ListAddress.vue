@@ -4,6 +4,7 @@
       <span @click="generateAddress" class="btn-generate">
         <h6>Gerar endereços</h6>
       </span>
+      <h1>{{ message }}</h1>
     </section>
     <hr>
     <ul>
