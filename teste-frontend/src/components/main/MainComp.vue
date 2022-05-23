@@ -1,16 +1,19 @@
 <template>
   <main>
     <AddCeps />
+    <ListAddress />
   </main>
 </template>
 
 <script>
   import AddCeps from './AddCeps.vue';
+  import ListAddress from './ListAddress.vue';
 
   export default {
     name: 'MainComp',
     components: {
       AddCeps,
+      ListAddress
     }
   }
 </script>
